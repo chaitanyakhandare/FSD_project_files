@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat";
+}
+
+.mission-about h1 {
+    font-size: 6vw;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    position: relative;
+    color: rgb(167 139 250);
+    transition: all 0.5s ease;
+}
+
+.mission-about h1::before {
+    content: "Pune Universities";
+    position: absolute;
+    color: royalblue;
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px royalblue;
+    z-index: -1;
+}
+
+.mission-about h1:hover {
+    color: rgb(124 58 237);
+}

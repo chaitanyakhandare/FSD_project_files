@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Gilroy Light';
+    src: local('Gilroy Light'), url("/Users/chaitanyakhandare/Library/Fonts/Gilroy-Light.otf") format('truetype');
+}
+
+:root {
+    --primarycolor: lightseagreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'FuturaBT-medium';
+}
+
+#nav-logo {
+    text-decoration: none;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    color: black;
+    border-bottom: 1.5px solid #dadada;
+}
+
+.nav h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: black;
+}
+
+.nav h4 {
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 600;
+    display: none;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    cursor: pointer;
+}
+
+/* C O N T E N T  */
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 60%;
+    padding: 5vw 5vw;
+    margin: 1vw 1vw;
+}
+
+.left h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.left span {
+    color: var(--primarycolor);
+    font-weight: 700;
+}
+
+.left p {
+    width: 80%;
+    font-size: 1.3vw;
+    color: #666;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+}
+
+.right {
+    height: 100%;
+    width: 40%;
+}
+.right img {
+    width: 100%;
+}
+
+
+.content button {
+    cursor: pointer;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-family: 'FuturaBT-medium', serif;
+}
+
+.content button:hover {
+    background-color: #196659;
+}
+
+
+
+/* T A B L E */
+
+.table-div {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table-div table {
+    border: 2px solid gray;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.table-div tr, td, th {
+    border: 2px solid blue;
+    border-radius: 12px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    color: gray;
+    text-align: center;
+}
+
+td img {
+    width: 80px;
+}
+
+
+
+/* BLOCK INLINE */
+
+
+.block-inline {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+.block-inline h3 {
+    margin-bottom: 50px;
+}
+
+.actual-b-div div {
+    background-color: yellow;
+    margin-bottom: 15px;
+}
+
+.actual-b-div span {
+    background-color: lightcoral;
+}
+
+
+
+/* I F R A M E */
+
+.iframe-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.iframe-div div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.html-forms {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .nav {
+        color: black;
+        padding: 0 6vw;
+        height: 70px;
+    }
+
+    .nav h2 {
+        font-size: 4vw;
+    }
+
+    .nav h4 {
+        display: none;
+    }
+
+    .nav i {
+        font-size: 4.5vw;
+        color: black;
+        display: block;
+    }
+
+    .content {
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .content button {
+        padding: 3vw 5vw;
+        font-size: 3vw;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+
+    .left {
+        width: 100%;
+        height: 45%;
+        padding: 5vw 5vw;
+        z-index: 0;
+    }
+    .left h2 {
+        font-size: 8vw;
+        line-height: 11vw;
+    }
+    .left p {
+        font-size: 3vw;
+        width: 80%;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .right {
+        width: 100%;
+        height: 55%;
+    }
+
+
+
+}
