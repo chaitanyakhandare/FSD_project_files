@@ -28,7 +28,30 @@
     <div class="flex flex-col items-center justify-center space-y-11">
         <h2 class="text-5xl px-16 py-8 font-extralight text-slate-600 tracking-wide">Contact Us</h2>
         <div class="py-8 px-16 space-x-20">
-            fsa
+            <form action="" method="" class="w-full space-y-3 flex flex-col">
+                <input class="px-5 py-3 bg-zinc-100 border-2 border-zinc-800 rounded-lg" name="name" placeholder="Name" type="text" required>
+                <input class="px-5 py-3 bg-zinc-100 border-2 border-zinc-800 rounded-lg" name="email" placeholder="Email Address" type="email" required>
+                <input class="px-5 py-3 bg-zinc-100 border-2 border-zinc-800 rounded-lg" name="number" placeholder="Phone Number" type="text" required>
+                <input class="px-5 py-3 bg-zinc-100 border-2 border-zinc-800 rounded-lg" name="number" placeholder="Date of birth" type="date" required>
+                <select class="px-5 py-3 bg-zinc-100 border-2 border-zinc-800 rounded-lg" name="inquiryType" required>
+                    <option value="" disabled selected>Select Inquiry Type</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="sales">Sales</option>
+                </select>
+                <div class="flex flex-col space-x-4">
+                    <label class="">
+                        <input type="radio" class="form-radio text-blue-600" name="contactMethod" value="email" required>
+                        <span class="ml-2">Email</span>
+                    </label>
+                    <label class="">
+                        <input type="radio" class="form-radio text-blue-600" name="contactMethod" value="phone" required>
+                        <span class="ml-2">Phone</span>
+                    </label>
+                </div>
+            
+                <button class="px-5 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 text-white" type="submit">Contact Us</button>
+            </form>
         </div>
 
         
