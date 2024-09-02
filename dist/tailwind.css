@@ -2475,6 +2475,10 @@ video {
   letter-spacing: 0.1em;
 }
 
+.tracking-tighter{
+  letter-spacing: -0.05em;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
