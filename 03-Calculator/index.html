@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction</title>
+    <link href="../dist/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+
+    <div class="w-full min-h-screen bg-zinc-900 flex flex-col text-white">
+        <nav class="w-full flex justify-between items-center py-8 px-16">
+            <div class="font-semibold tracking-wider text-xl">
+                Calcu<span class="text-violet-500">lator</span>
+            </div>
+            <div class="space-x-3 text-black">
+                <button onclick="" class="px-4 py-2 text-sm bg-blue-100 rounded-lg hover:bg-blue-200">Home</button>
+                <button onclick="" class="px-4 py-2 text-sm bg-blue-100 rounded-lg hover:bg-blue-200">Metro</button>
+                <button onclick=""
+                    class="px-4 py-2 text-sm bg-blue-100 rounded-lg hover:bg-blue-200">Attractions</button>
+                <button onclick=""
+                    class="px-4 py-2 text-sm bg-blue-100 rounded-lg hover:bg-blue-200">Universities</button>
+                <button onclick="" class="px-4 py-2 text-sm bg-blue-100 rounded-lg hover:bg-blue-200">Contact
+                    Us</button>
+            </div>
+        </nav>
+
+
+        <section class="w-full px-16 py-10 grid grid-cols-5 gap-5">
+            <div class="col-span-2 flex flex-col px-10 py-7 border border-zinc-500 rounded-xl space-y-5">
+                <h3 class="w-full self-start text-lg text-end font-semibold tracking-wider text-zinc-600">input-section
+                </h3>
+                <input class="bg-transparent border-2 border-zinc-800 outline-none px-5 py-2 rounded-lg" type="number"
+                    name="firstNumber" id="firstNumber" placeholder="Enter first number">
+                <input class="bg-transparent border-2 border-zinc-800 outline-none px-5 py-2 rounded-lg" type="number"
+                    name="secondNumber" id="secondNumber" placeholder="Enter second number">
+                <div class="col-span-2 flex flex-col items-start justify-center rounded-lg space-y-3">
+                    <button onclick="add()"
+                        class="px-5 py-2 w-full bg-violet-700 rounded-lg hover:bg-violet-800">Addition</button>
+                    <button onclick="sub()"
+                        class="px-5 py-2 w-full bg-violet-700 rounded-lg hover:bg-violet-800">Subtraction</button>
+                    <button onclick="multiply()"
+                        class="px-5 py-2 w-full bg-violet-700 rounded-lg hover:bg-violet-800">Multiplication</button>
+                    <button onclick="division()"
+                        class="px-5 py-2 w-full bg-violet-700 rounded-lg hover:bg-violet-800">Division</button>
+                    <button onclick="clearfnc()"
+                        class="px-5 py-2 w-full bg-yellow-500 text-black font-medium tracking-wider rounded-lg hover:bg-yellow-700">Clear</button>
+                </div>
+            </div>
+
+            <div
+                class="col-span-3 w-full px-10 py-7 border border-zinc-500 rounded-xl flex flex-col items-center justify-between">
+                <h3 class="w-full text-lg text-end font-semibold tracking-wider text-zinc-600 mb-4">result-section</h3>
+
+                <div class="w-full flex-grow flex items-center justify-center space-x-7">
+                    <h3 id="result" class="text-lg text-end font-semibold tracking-wider text-zinc-100">Click on button
+                        to show result.</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <script src="./fsdPract03-2.js"></script>
+</body>
+
+</html>

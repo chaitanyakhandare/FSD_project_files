@@ -40,3 +40,4 @@ console.log("String after padStart:", paddedString);
 // PadEnd
 let paddedEndString = mixedArray[4].padEnd(15, '-');
 console.log("String after padEnd:", paddedEndString);
+
